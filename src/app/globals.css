@@ -207,3 +207,83 @@ input, textarea, select { font: inherit; color: inherit; }
   html { scroll-behavior: auto; }
   * { animation: none !important; transition: none !important; }
 }
+/* Modern Arabic typography and grilled-food style */
+body {
+  font-size: 16px;
+  letter-spacing: 0;
+  text-rendering: optimizeLegibility;
+}
+
+.display {
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1.25;
+}
+
+.hero h1 {
+  font-size: clamp(2.6rem, 9vw, 5.2rem);
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+.hero .sub {
+  line-height: 1.5;
+}
+
+.sec h2 {
+  font-weight: 800;
+  text-wrap: balance;
+}
+
+.sec-head {
+  text-align: center;
+}
+
+.cat-card,
+.item,
+.feat,
+.contact-card {
+  border-radius: 16px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.item h3 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.6;
+}
+
+.item p {
+  line-height: 1.7;
+}
+
+.price {
+  font-size: 1.15rem;
+  white-space: nowrap;
+}
+
+.add {
+  border-radius: 10px;
+  padding-inline: 18px;
+}
+
+@media (max-width: 560px) {
+  .hero-body {
+    padding-top: 110px;
+    padding-bottom: 48px;
+  }
+
+  .sec {
+    padding-block: 52px;
+  }
+
+  .nav a,
+  .nav button.navlink {
+    font-size: 0.95rem;
+  }
+
+  .item {
+    gap: 10px;
+    padding: 10px;
+  }
+}
